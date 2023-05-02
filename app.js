@@ -28,7 +28,6 @@ function scorePlayerOne() {
 
   playerOneElem.innerText = clickCountOne.toString()
 
-  
   document.getElementById("player-one").innerText = `${clickCountOne < 10 ? clickCountOne++ : 'You Won!'}`
 
   document.getElementById("count-one").innerText = document.getElementById("player-one").innerText
