@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css' rel='stylesheet' integrity='sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD' crossorigin='anonymous'>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+
+<body>
+  
+  <main class="container-fluid">
+    <section class="game-controls">
+
+    </section>
+    <section>
+      <div class="main-controls">
+        <button type="button" id="start-button" onclick="startGame()" class="btn btn-success my-3">
+          Start Game
+        </button>
+      </div>
+    </section>
+    
+    <section class="row scoreboard mx-5 my-3 p-4">
+
+      <section class="col-6 d-flex justify-content-around">
+        <div id="target-one" class="target-one hidden">
+          <div class="circle-five rounded-circle btn btn-light">
+            <div class="circle-four rounded-circle btn btn-dark">
+              <div class="circle-three rounded-circle btn btn-warning">
+                <div class="circle-two rounded-circle btn btn-success">
+                  <button id="player-one" onclick="scorePlayerOne()" class="btn btn-danger rounded-circle">
+                    <span id="click-count">0</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+  
+      <section class="col-6 d-flex justify-content-around">
+        <div id="target-two" class="target-two hidden">
+          <div class="circle-five rounded-circle btn btn-light">
+            <div class="circle-four rounded-circle btn btn-dark">
+              <div class="circle-three rounded-circle btn btn-warning">
+                <div class="circle-two rounded-circle btn btn-success">
+                  <button id="player-two" onclick="scorePlayerTwo()" class="btn btn-danger rounded-circle">
+                    <span id="click-count">0</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="row">
+          <div id="p-one-score" class="col-6 d-flex justify-content-around hidden">
+            <div class="team d-flex justify-content-center align-items-center">
+              home
+            </div>
+            <div class="player-one-score d-flex justify-content-center align-items-center">
+              <span id="count-one">0</span>
+            </div>
+          </div>
+          <div id="p-two-score" class="col-6 d-flex justify-content-around hidden">
+            <div class="team d-flex justify-content-center align-items-center">away</div>
+            <div class="player-two-score d-flex justify-content-center align-items-center">
+              <span id="count-two">0</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </section>
+
+
+  </main>
+
+  <script src="app.js"></script>
+
+</body>
+</html>

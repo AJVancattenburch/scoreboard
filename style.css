@@ -1,0 +1,112 @@
+:root{
+  --bg-primary: #527442;
+  --primary-lighten: #f5b8fc;
+  --primary-darken: #af2cbc;
+  --bg-secondary: #ff000044;
+  --shadow: 2px 0 8px #0000004d;
+  --circle: 50%;
+  --text-primary: #3a3838;
+  --text-secondary: #ff0000;
+  --dark-lighten: #504c4c;
+  --light: #fdfdfd;
+}
+
+body {
+  font-family: "Audiowide", sans-serif;
+}
+
+#start-button {
+  margin-left: 41.5%;
+}
+
+.rounded-circle {
+  background-image: url("https://www.transparenttextures.com/patterns/wine-cork.png");
+  height: 3rem;
+  width: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.rounded-circle:hover {
+  color: var(--text-secondary) !important;
+}
+
+.circle-two {
+  height: 5rem;
+  width: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle-three {
+  height: 7rem;
+  width: 7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.circle-four {
+  height: 9rem;
+  width: 9rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle-five {
+  height: 11rem;
+  width: 11rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.scoreboard {
+  background-image: url("https://www.transparenttextures.com/patterns/fabric-1-light.png");
+  background-color: var(--bg-primary);
+  height: 20rem;
+  border: 1rem inset #a7875f;
+  border-style: groove;
+  border-radius: .25rem;
+  box-shadow: 40px -40px 40px -30px inset black;
+  box-shadow: -3px -2px 44px 9px inset black;
+}
+
+
+
+.player-one-score {
+  color: var(--text-secondary);
+  font-size: 2.25rem;
+  background-color: var(--bg-secondary);
+  text-shadow: 2px 2px 4px 2px var(--text-secondary);
+  height: 3rem;
+  width: 33.3%;
+  border-radius: .5rem;
+  margin-top: 1rem;
+}
+#count-one {
+  filter: brightness(150%);
+  text-shadow: 3px 3px 5px red;
+}
+
+.player-two-score {
+  color: var(--text-secondary);
+  font-size: 2.25rem;
+  background-color: var(--bg-secondary);
+  text-shadow: 2px 2px 4px 2px var(--text-secondary);
+  height: 3rem;
+  width: 33.3%;
+  border-radius: .5rem;
+  margin-top: 1rem;
+}
+#count-two {
+  filter: brightness(150%);
+  text-shadow: 3px 3px 5px red;
+}
+
+.hidden {
+  visibility: hidden !important;
+}
